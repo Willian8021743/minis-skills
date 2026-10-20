@@ -1,0 +1,78 @@
+目录名,分类,说明,来源,难度,需要的凭据/环境变量,依赖,文件数,KB
+brand-docx,办公与文档,从模板抽取品牌 → 套用到 DOCX（10 种大牌风格）,ferdinandobons/brand-docs,partial,,"brandkit, python-docx",11,67
+brand-pptx,办公与文档,从模板抽取品牌 → 套用到 PPTX,ferdinandobons/brand-docs,partial,,"brandkit, python-pptx",4,46
+brand-xlsx,办公与文档,从模板抽取品牌 → 套用到 XLSX,ferdinandobons/brand-docs,partial,,"brandkit, openpyxl",4,45
+data-cleaning-for-excel,办公与文档,脏数据清洗：空行、重复、格式混杂 → 规范表,andreworia/claude-excel-skills,pure,,,1,1
+deck-refresh,办公与文档,季度报/财报数字刷新到现有 deck,fivetaku/claude-office-skills,deps,,python-pptx,1,7
+document-polisher,办公与文档,DOCX 排版升级：Economist/McKinsey/Apple 等品牌美学,MinisSkills 合集,partial,,python-docx,13,52
+docx,办公与文档,Word 文档读写/编辑/批注/修订，官方 OOXML 库,anthropics/skills,partial,,"python-docx, lxml, pandoc",61,1103
+excel-hygiene,办公与文档,xlsx 机械体检：文本型数字、硬编码、截断 SUM,BayramAnnakov/excel-hygiene,partial,,openpyxl,8,36
+formula-audit-checker,办公与文档,公式审计清单：循环引用、隐式错误、单位不一致,andreworia/claude-excel-skills,pure,,,1,10
+ib-check-deck,办公与文档,投行级路演质检：数字一致性、叙事对齐、措辞,fivetaku/claude-office-skills,partial,,python-pptx,4,17
+inputs-calcs-outputs-design,办公与文档,三表分离原则：Inputs / Calcs / Outputs,andreworia/claude-excel-skills,pure,,,1,10
+mermaid-to-vsdx,办公与文档,Mermaid 流程图直接生成 Visio .vsdx,simoneven/mermaid-to-vsdx-skill,deps,,vsdx,6,65
+model-architecture-template,办公与文档,财务模型骨架：主表结构、命名、颜色、打印区,andreworia/claude-excel-skills,pure,,,1,11
+office-hub,办公与文档,本地 Office 四件套（docx/xlsx/pptx/vsdx）统一入口,MinisSkills 合集,deps,,"python-docx, openpyxl, python-pptx, vsdx",2,13
+pdf,办公与文档,PDF 读取/合并拆分/表单填写/渲染成图,anthropics/skills,partial,,"pypdf, pdfplumber, pdf2image, pillow",12,58
+pdf-converter,办公与文档,Markdown/HTML/图片转 PDF（typst + pandoc 管线）,MinisSkills 合集,partial,,"typst, pandoc",1,8
+pivot-table-builder,办公与文档,按扁平数据搭建透视表（行列值+筛选）,andreworia/claude-excel-skills,pure,,,1,1
+pptx,办公与文档,PowerPoint 生成/编辑、版式与母版（官方脚本集）,anthropics/skills,partial,,"python-pptx, lxml",56,1113
+scenario-manager,办公与文档,Base/Bull/Bear 情景切换层（CHOOSE/INDEX）,andreworia/claude-excel-skills,pure,,,1,8
+xlsx,办公与文档,Excel 读写、公式、格式、图表（官方脚本集）,anthropics/skills,partial,,"openpyxl, lxml",53,1077
+deepseek-usage,数据与金融,DeepSeek 余额/月消费/分模型 token/缓存命中率,MinisSkills 合集,config,"DEEPSEEK_EMAIL, DEEPSEEK_PASSWORD",browser_use 登录,1,8
+fucai3d-latest,数据与金融,福彩 3D 最新开奖号码与历史记录,MinisSkills 合集,pure,,,1,4
+korea-stock,数据与金融,韩股 KOSPI/KOSDAQ 行情（Naver，免登录）,MinisSkills 合集,pure,,,1,2
+reverse-dcf,数据与金融,反向 DCF：用市价倒推市场隐含假设,MinisSkills 合集,pure,,,1,11
+stock-fund-flow,数据与金融,行业/概念板块资金流与主力净流入排行（东财）,MinisSkills 合集,pure,,,1,2
+stock-price,数据与金融,A股/港股/ETF/指数实时行情（腾讯接口，免 key）,MinisSkills 合集,pure,,,1,2
+us-stock,数据与金融,美股三大指数 + Mag7 + VIX + 0DTE Gamma,MinisSkills 合集,pure,,,1,6
+whenpeak,数据与金融,按睡眠预测个人高效时段，给出排期建议,MinisSkills 合集,config,WHENPEAK_API_KEY,matplotlib,8,26
+bilibili-hub,社媒与内容平台,B站：视频/用户/弹幕/评论读写,jackwener/bilibili-cli,config,BILI cookies,"bilibili-api-python, aiohttp",6,54
+douyin-downloader,社媒与内容平台,抖音分享链接解析、无水印视频下载,MinisSkills 合集,deps,,requests,4,22
+maimai-hub,社媒与内容平台,脉脉：同事圈帖子、职言热榜、公司 webcid,MinisSkills 合集,config,MAIMAI cookies,,1,5
+memos-api,社媒与内容平台,Memos API：memo CRUD、AIP-160 过滤、分页,MinisSkills 合集,config,MEMOS_TOKEN,curl,1,2
+notion-hub,社媒与内容平台,Notion：搜索、页面 CRUD、数据库查询、评论,MinisSkills 合集,config,NOTION_API_KEY,notion-client,1,9
+qbt-hub,社媒与内容平台,qBittorrent WebUI：种子/磁力、限速、标签,MinisSkills 合集,config,"QBT_URL, QBT_USER, QBT_PASS",python3,1,5
+quark-hub,社媒与内容平台,夸克网盘：登录、目录、转存、分享链接,ihmily/QuarkPanTool,config,QUARK cookies,python3,1,6
+spotify-hub,社媒与内容平台,Spotify 播放控制与查询（spotipy）,MinisSkills 合集,config,SPOTIFY_* (client_id/secret/refresh_token),spotipy,3,20
+tg-hub,社媒与内容平台,Telegram：会话/消息/频道（Telethon）,jackwener/tg-cli,config,"TG_API_ID, TG_API_HASH, TG_SESSION",telethon,8,47
+twitter-downloader,社媒与内容平台,X 推文正文/图片/GIF/视频下载（fxtwitter）,MinisSkills 合集,deps,,"curl, jq, ffmpeg",3,10
+twitter-x-hub,社媒与内容平台,X/Twitter：推文/用户/时间线抓取,public-clis/twitter-cli,config,X cookies,httpx/pip,8,68
+weibo-hub,社媒与内容平台,微博：热搜/用户/博文/评论,jackwener/weibo-cli,config,WEIBO cookies,httpx,8,33
+xianyu-hub,社媒与内容平台,闲鱼：商品搜索、详情、卖家信息,MinisSkills 合集,config,XIANYU cookies,curl,9,51
+xiaohongshu-hub,社媒与内容平台,小红书：笔记/搜索/评论/互动,jackwener/xiaohongshu-cli,config,XHS cookies,"httpx, pycryptodome",9,63
+youtube-downloader,社媒与内容平台,YouTube 视频/音频下载与转码,MinisSkills 合集,deps,,"yt-dlp, ffmpeg",3,27
+ytmusic-hub,社媒与内容平台,YouTube Music 资料库读写,MinisSkills 合集,config,YTMusic cookies,ytmusicapi,2,10
+appstoreprice-hub,搜索与网页,App Store 各区价格查询（含签名逆向调用）,MinisSkills 合集,deps,,browser_use,2,11
+exa-search,搜索与网页,Exa 神经搜索 + 网页转 Markdown + 过滤检索,MinisSkills 合集,config,EXA_API_KEY,python3,2,8
+tavily-search,搜索与网页,Tavily 检索 API,MinisSkills 合集,config,TAVILY_API_KEY,tavily-python,3,6
+web-content-extractor,搜索与网页,网页正文提取（去广告/导航）,MinisSkills 合集,deps,,curl / browser_use,1,2
+web-search,搜索与网页,多引擎搜索：Perplexity/Metaso/Google/Bing/DDG…,MinisSkills 合集,deps,,browser_use,3,11
+answer-me-with-html,图像·音频·可视化,把答案渲染成一页可视化 HTML 解释页,Willian8021743/answer-me-with-html,deps,,node,5,956
+codex-image,图像·音频·可视化,用 Codex 后端 gpt-image-2 生成图片,MinisSkills 合集,config,Codex 登录态,python3,4,26
+doubao-tts,图像·音频·可视化,豆包/火山引擎 TTS 文字转语音,MinisSkills 合集,config,"VOLC_TTS_APPID, VOLC_TTS_TOKEN",uv,2,18
+free-tts,图像·音频·可视化,edge-tts 免费朗读，无需注册,MinisSkills 合集,deps,,edge-tts,1,4
+generative-ui-minis,图像·音频·可视化,文本 → 单文件 HTML 生成器（卡片/表/时间线/图）,MinisSkills 合集,pure,,,1,4
+hyperframes,图像·音频·可视化,HyperFrames：HTML 视频合成、GSAP 时间线、字幕,heygen-com/hyperframes,deps,,"node, ffmpeg",1,24
+hyperframes-cli,图像·音频·可视化,HyperFrames CLI：init/lint/render/tts，Minis 内渲染,heygen-com/hyperframes,deps,,"node, ffmpeg",1,14
+nano-banana,图像·音频·可视化,Google Gemini 图像生成/编辑,MinisSkills 合集,config,GEMINI_API_KEY / GOOGLE_API_KEY,,1,6
+apple-reminders,Apple 与 iOS,提醒事项：读取、简报、新增、安全改动,MinisSkills 合集,deps,,apple-reminders CLI,3,34
+asc-cli,Apple 与 iOS,App Store Connect CLI：TestFlight/上架/评论,rorkai/App-Store-Connect-CLI,config,"ASC_KEY_ID, ASC_ISSUER_ID, .p8",asc 二进制,1,7
+contact-vcard-extractor,Apple 与 iOS,名片/二维码/截图 → 通讯录 vCard,MinisSkills 合集,deps,,pillow,2,13
+coredevice-toolkit,Apple 与 iOS,免电脑免越狱 CoreDevice RSD 工具链,MinisSkills 合集,deps,,"pymobiledevice3, cryptography, node",14,88
+ios-location,Apple 与 iOS,iPhone 虚拟定位：模块生成 + 本地选点地图,本机定制,pure,,,1,3
+native-app-actions,Apple 与 iOS,用 URL scheme 直接拉起本机 App 并带参数,本机定制,pure,,,1,3
+shortcut-share-file,Apple 与 iOS,通过「极速分享」快捷指令发 iCloud 文件,本机定制,config,快捷指令已安装,,3,6
+shortcuts-builder,Apple 与 iOS,自然语言 → Apple 快捷指令（含 golden 样例库）,viticci/shortcuts-playground-plugin,config,签名需 HubSign 授权,python3,109,3270
+clash-控制器,开发与系统,Clash/mihomo 控制器：连接/流量/规则/切节点,openminis/MinisSkills,config,"CLASH_API_URL, CLASH_SECRET",python3,5,26
+cloudflare-dns,开发与系统,flarectl 管理 Cloudflare DNS 与 zone,wsvn53/flarectl,config,CF_API_TOKEN,flarectl 二进制,1,5
+codex-on-ish,开发与系统,在 iSH 里跑 OpenAI Codex CLI（含 MITM 代理方案）,MinisSkills 合集,config,OPENAI_API_KEY,node,9,29
+evidence-chain-builder,开发与系统,给论断打分：证据链核查与引用,MinisSkills 合集,deps,,,4,32
+github-sync-helper,开发与系统,把本地产物同步到 GitHub 仓库,本机定制,config,GITHUB_TOKEN,git,1,11
+health-sleep-analysis,开发与系统,Apple Health 睡眠分期/血氧/心率分析,本机定制,deps,,apple-healthkit,1,11
+openstreetmap-marker,开发与系统,生成高德风格地标地图 HTML（行程规划）,MinisSkills 合集,pure,,,1,7
+production-agent-public,开发与系统,生产级 ReAct Agent 规范：重试/降级/可观测,MinisSkills 合集,pure,,,1,7
+self-improving-agent,开发与系统,失败/纠错的自省日志与闭环反馈,MinisSkills 合集,deps,,,8,28
+skill-creator,开发与系统,编写/迭代 skill 的官方方法论,anthropics/skills,pure,,,1,4
+todoocard,开发与系统,TodooCard 电子纸卡片推送（今天吃点啥）,MinisSkills 合集,config,蓝牙/卡片,pillow,13,76
+xuexitong,开发与系统,学习通：课表/作业/成绩/章节/资料下载,Han-maker-wp/xuexitong-skill,config,学习通账号,python3,16,66

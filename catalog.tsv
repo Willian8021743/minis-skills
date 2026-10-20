@@ -1,0 +1,78 @@
+name	cat	tier	deps	key	desc
+brand-docx	office	partial	brandkit, python-docx		从模板抽取品牌 → 套用到 DOCX（10 种大牌风格）
+brand-pptx	office	partial	brandkit, python-pptx		从模板抽取品牌 → 套用到 PPTX
+brand-xlsx	office	partial	brandkit, openpyxl		从模板抽取品牌 → 套用到 XLSX
+data-cleaning-for-excel	office	pure			脏数据清洗：空行、重复、格式混杂 → 规范表
+deck-refresh	office	deps	python-pptx		季度报/财报数字刷新到现有 deck
+document-polisher	office	partial	python-docx		DOCX 排版升级：Economist/McKinsey/Apple 等品牌美学
+docx	office	partial	python-docx, lxml, pandoc		Word 文档读写/编辑/批注/修订，官方 OOXML 库
+excel-hygiene	office	partial	openpyxl		xlsx 机械体检：文本型数字、硬编码、截断 SUM
+formula-audit-checker	office	pure			公式审计清单：循环引用、隐式错误、单位不一致
+ib-check-deck	office	partial	python-pptx		投行级路演质检：数字一致性、叙事对齐、措辞
+inputs-calcs-outputs-design	office	pure			三表分离原则：Inputs / Calcs / Outputs
+mermaid-to-vsdx	office	deps	vsdx		Mermaid 流程图直接生成 Visio .vsdx
+model-architecture-template	office	pure			财务模型骨架：主表结构、命名、颜色、打印区
+office-hub	office	deps	python-docx, openpyxl, python-pptx, vsdx		本地 Office 四件套（docx/xlsx/pptx/vsdx）统一入口
+pdf	office	partial	pypdf, pdfplumber, pdf2image, pillow		PDF 读取/合并拆分/表单填写/渲染成图
+pdf-converter	office	partial	typst, pandoc		Markdown/HTML/图片转 PDF（typst + pandoc 管线）
+pivot-table-builder	office	pure			按扁平数据搭建透视表（行列值+筛选）
+pptx	office	partial	python-pptx, lxml		PowerPoint 生成/编辑、版式与母版（官方脚本集）
+scenario-manager	office	pure			Base/Bull/Bear 情景切换层（CHOOSE/INDEX）
+xlsx	office	partial	openpyxl, lxml		Excel 读写、公式、格式、图表（官方脚本集）
+deepseek-usage	finance	config	browser_use 登录	DEEPSEEK_EMAIL, DEEPSEEK_PASSWORD	DeepSeek 余额/月消费/分模型 token/缓存命中率
+fucai3d-latest	finance	pure			福彩 3D 最新开奖号码与历史记录
+korea-stock	finance	pure			韩股 KOSPI/KOSDAQ 行情（Naver，免登录）
+reverse-dcf	finance	pure			反向 DCF：用市价倒推市场隐含假设
+stock-fund-flow	finance	pure			行业/概念板块资金流与主力净流入排行（东财）
+stock-price	finance	pure			A股/港股/ETF/指数实时行情（腾讯接口，免 key）
+us-stock	finance	pure			美股三大指数 + Mag7 + VIX + 0DTE Gamma
+whenpeak	finance	config	matplotlib	WHENPEAK_API_KEY	按睡眠预测个人高效时段，给出排期建议
+bilibili-hub	social	config	bilibili-api-python, aiohttp	BILI cookies	B站：视频/用户/弹幕/评论读写
+douyin-downloader	social	deps	requests		抖音分享链接解析、无水印视频下载
+maimai-hub	social	config		MAIMAI cookies	脉脉：同事圈帖子、职言热榜、公司 webcid
+memos-api	social	config	curl	MEMOS_TOKEN	Memos API：memo CRUD、AIP-160 过滤、分页
+notion-hub	social	config	notion-client	NOTION_API_KEY	Notion：搜索、页面 CRUD、数据库查询、评论
+qbt-hub	social	config	python3	QBT_URL, QBT_USER, QBT_PASS	qBittorrent WebUI：种子/磁力、限速、标签
+quark-hub	social	config	python3	QUARK cookies	夸克网盘：登录、目录、转存、分享链接
+spotify-hub	social	config	spotipy	SPOTIFY_* (client_id/secret/refresh_token)	Spotify 播放控制与查询（spotipy）
+tg-hub	social	config	telethon	TG_API_ID, TG_API_HASH, TG_SESSION	Telegram：会话/消息/频道（Telethon）
+twitter-downloader	social	deps	curl, jq, ffmpeg		X 推文正文/图片/GIF/视频下载（fxtwitter）
+twitter-x-hub	social	config	httpx/pip	X cookies	X/Twitter：推文/用户/时间线抓取
+weibo-hub	social	config	httpx	WEIBO cookies	微博：热搜/用户/博文/评论
+xianyu-hub	social	config	curl	XIANYU cookies	闲鱼：商品搜索、详情、卖家信息
+xiaohongshu-hub	social	config	httpx, pycryptodome	XHS cookies	小红书：笔记/搜索/评论/互动
+youtube-downloader	social	deps	yt-dlp, ffmpeg		YouTube 视频/音频下载与转码
+ytmusic-hub	social	config	ytmusicapi	YTMusic cookies	YouTube Music 资料库读写
+appstoreprice-hub	search	deps	browser_use		App Store 各区价格查询（含签名逆向调用）
+exa-search	search	config	python3	EXA_API_KEY	Exa 神经搜索 + 网页转 Markdown + 过滤检索
+tavily-search	search	config	tavily-python	TAVILY_API_KEY	Tavily 检索 API
+web-content-extractor	search	deps	curl / browser_use		网页正文提取（去广告/导航）
+web-search	search	deps	browser_use		多引擎搜索：Perplexity/Metaso/Google/Bing/DDG…
+answer-me-with-html	media	deps	node		把答案渲染成一页可视化 HTML 解释页
+codex-image	media	config	python3	Codex 登录态	用 Codex 后端 gpt-image-2 生成图片
+doubao-tts	media	config	uv	VOLC_TTS_APPID, VOLC_TTS_TOKEN	豆包/火山引擎 TTS 文字转语音
+free-tts	media	deps	edge-tts		edge-tts 免费朗读，无需注册
+generative-ui-minis	media	pure			文本 → 单文件 HTML 生成器（卡片/表/时间线/图）
+hyperframes	media	deps	node, ffmpeg		HyperFrames：HTML 视频合成、GSAP 时间线、字幕
+hyperframes-cli	media	deps	node, ffmpeg		HyperFrames CLI：init/lint/render/tts，Minis 内渲染
+nano-banana	media	config		GEMINI_API_KEY / GOOGLE_API_KEY	Google Gemini 图像生成/编辑
+apple-reminders	apple	deps	apple-reminders CLI		提醒事项：读取、简报、新增、安全改动
+asc-cli	apple	config	asc 二进制	ASC_KEY_ID, ASC_ISSUER_ID, .p8	App Store Connect CLI：TestFlight/上架/评论
+contact-vcard-extractor	apple	deps	pillow		名片/二维码/截图 → 通讯录 vCard
+coredevice-toolkit	apple	deps	pymobiledevice3, cryptography, node		免电脑免越狱 CoreDevice RSD 工具链
+ios-location	apple	pure			iPhone 虚拟定位：模块生成 + 本地选点地图
+native-app-actions	apple	pure			用 URL scheme 直接拉起本机 App 并带参数
+shortcut-share-file	apple	config		快捷指令已安装	通过「极速分享」快捷指令发 iCloud 文件
+shortcuts-builder	apple	config	python3	签名需 HubSign 授权	自然语言 → Apple 快捷指令（含 golden 样例库）
+clash-控制器	dev	config	python3	CLASH_API_URL, CLASH_SECRET	Clash/mihomo 控制器：连接/流量/规则/切节点
+cloudflare-dns	dev	config	flarectl 二进制	CF_API_TOKEN	flarectl 管理 Cloudflare DNS 与 zone
+codex-on-ish	dev	config	node	OPENAI_API_KEY	在 iSH 里跑 OpenAI Codex CLI（含 MITM 代理方案）
+evidence-chain-builder	dev	deps			给论断打分：证据链核查与引用
+github-sync-helper	dev	config	git	GITHUB_TOKEN	把本地产物同步到 GitHub 仓库
+health-sleep-analysis	dev	deps	apple-healthkit		Apple Health 睡眠分期/血氧/心率分析
+openstreetmap-marker	dev	pure			生成高德风格地标地图 HTML（行程规划）
+production-agent-public	dev	pure			生产级 ReAct Agent 规范：重试/降级/可观测
+self-improving-agent	dev	deps			失败/纠错的自省日志与闭环反馈
+skill-creator	dev	pure			编写/迭代 skill 的官方方法论
+todoocard	dev	config	pillow	蓝牙/卡片	TodooCard 电子纸卡片推送（今天吃点啥）
+xuexitong	dev	config	python3	学习通账号	学习通：课表/作业/成绩/章节/资料下载
