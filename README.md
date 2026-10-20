@@ -7,7 +7,8 @@
 ## 一键部署
 
 ```sh
-git clone <本仓库地址> && cd minis-skills
+git clone https://github.com/Willian8021743/minis-skills.git
+cd minis-skills
 
 sh deploy.sh --deps            # 全部 77 个 + 自动装依赖
 sh deploy.sh --group office    # 只装一类
